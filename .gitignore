@@ -214,5 +214,28 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.tfplan
+crash.log
+
+# Local databases and logs
+*.db
+*.sqlite3
+*.log
+
+# Node dependencies if you use pnpm
+node_modules/
+
+
 # Streamlit
 .streamlit/secrets.toml
